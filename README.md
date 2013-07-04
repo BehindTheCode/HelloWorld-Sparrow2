@@ -1,7 +1,9 @@
 Hello World - The Game
 =====================
 
-This is a game written by Andreas Wålm and was migrated to Sparrow Framework 2.0 by Joseph Caudill.  
+This is a game written by Andreas Wålm and was migrated to Sparrow Framework 2.0 by Joseph Caudill.
+
+A walkthrough of the migration is available on [BehindTheCode.Net](http://wp.me/p3HsaP-1b)
 
 ![Screenshots](https://raw.github.com/BehindTheCode/helloworld-sparrow2/master/screenshots.jpg)
 
