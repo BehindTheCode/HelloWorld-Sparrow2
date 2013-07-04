@@ -3,7 +3,7 @@ Hello World - The Game
 
 This is a game written by Andreas Wålm and was migrated to Sparrow Framework 2.0 by Joseph Caudill.  
 
-![Screenshots](https://raw.github.com/jcaudill/helloworld-sparrow2/master/screenshots.jpg)
+![Screenshots](https://raw.github.com/BehindTheCode/helloworld-sparrow2/master/screenshots.jpg)
 
 Save the World from all Hello'ers, fire rockets at their space ships.
 
