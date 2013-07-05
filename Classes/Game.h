@@ -16,8 +16,4 @@
 + (float)centerX;
 + (float)centerY;
 
-
-@property (nonatomic, assign) float gameWidth;
-@property (nonatomic, assign) float gameHeight;
-
 @end

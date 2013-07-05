@@ -33,7 +33,6 @@
 		F9DFF1611784FCCD00C11F21 /* RocketSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFF1551784FCCD00C11F21 /* RocketSprite.m */; };
 		F9DFF1621784FCCD00C11F21 /* TitleSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFF1571784FCCD00C11F21 /* TitleSprite.m */; };
 		F9DFF1631784FCCD00C11F21 /* UFOSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFF1591784FCCD00C11F21 /* UFOSprite.m */; };
-		F9DFF1641784FCCD00C11F21 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFF15C1784FCCD00C11F21 /* SXNSDataExtensions.m */; };
 		F9DFF1651784FCCD00C11F21 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFF15E1784FCCD00C11F21 /* SXParticleSystem.m */; };
 		F9DFF18A1784FD1900C11F21 /* boom.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9DFF1681784FD1900C11F21 /* boom.caf */; };
 		F9DFF18B1784FD1900C11F21 /* hello.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9DFF1691784FD1900C11F21 /* hello.caf */; };
@@ -125,8 +124,6 @@
 		F9DFF1571784FCCD00C11F21 /* TitleSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleSprite.m; sourceTree = "<group>"; };
 		F9DFF1581784FCCD00C11F21 /* UFOSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFOSprite.h; sourceTree = "<group>"; };
 		F9DFF1591784FCCD00C11F21 /* UFOSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFOSprite.m; sourceTree = "<group>"; };
-		F9DFF15B1784FCCD00C11F21 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXNSDataExtensions.h; sourceTree = "<group>"; };
-		F9DFF15C1784FCCD00C11F21 /* SXNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXNSDataExtensions.m; sourceTree = "<group>"; };
 		F9DFF15D1784FCCD00C11F21 /* SXParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXParticleSystem.h; sourceTree = "<group>"; };
 		F9DFF15E1784FCCD00C11F21 /* SXParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXParticleSystem.m; sourceTree = "<group>"; };
 		F9DFF1681784FD1900C11F21 /* boom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = boom.caf; sourceTree = "<group>"; };
@@ -285,8 +282,6 @@
 		F9DFF15A1784FCCD00C11F21 /* SXParticleSystem */ = {
 			isa = PBXGroup;
 			children = (
-				F9DFF15B1784FCCD00C11F21 /* SXNSDataExtensions.h */,
-				F9DFF15C1784FCCD00C11F21 /* SXNSDataExtensions.m */,
 				F9DFF15D1784FCCD00C11F21 /* SXParticleSystem.h */,
 				F9DFF15E1784FCCD00C11F21 /* SXParticleSystem.m */,
 			);
@@ -519,7 +514,6 @@
 				F9DFF1611784FCCD00C11F21 /* RocketSprite.m in Sources */,
 				F9DFF1621784FCCD00C11F21 /* TitleSprite.m in Sources */,
 				F9DFF1631784FCCD00C11F21 /* UFOSprite.m in Sources */,
-				F9DFF1641784FCCD00C11F21 /* SXNSDataExtensions.m in Sources */,
 				F9DFF1651784FCCD00C11F21 /* SXParticleSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

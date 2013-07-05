@@ -86,7 +86,8 @@
   [tween moveToX:endX y:endY];
     
     tween.onComplete = ^() {
-        [self onArrivedAtTarget];
+        [self removeFromParent];
+        [self dispatchEvent:[SPEvent eventWithType:ROCKET_ON_TARGET_EVENT]];
     };
     
   [self.juggler addObject:tween];
@@ -119,10 +120,5 @@
   [[self.juggler delayInvocationAtTarget:self byTime:1.0f] removeFromParent];
 }
 
-- (void)onArrivedAtTarget
-{
-  [self removeFromParent];
-  [self dispatchEvent:[SPEvent eventWithType:ROCKET_ON_TARGET_EVENT]];
-}
 
 @end

@@ -54,9 +54,6 @@
 static float s_centerX = 0.0;
 static float s_centerY = 0.0;
 
-@synthesize gameWidth  = mGameWidth;
-@synthesize gameHeight = mGameHeight;
-
 
 + (BOOL)isTallScreen
 {
@@ -77,8 +74,12 @@ static float s_centerY = 0.0;
 {
     if ((self = [super init]))
     {
-        mGameWidth = [[UIScreen mainScreen] bounds].size.width;
-        mGameHeight = [[UIScreen mainScreen] bounds].size.height;
+        CGRect screenBounds = [UIScreen mainScreen].bounds;
+        
+        BOOL isPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+         mGameWidth  = isPad ? 384 : screenBounds.size.width;
+         mGameHeight = isPad ? 512 : screenBounds.size.height;
+        
         
         s_centerX = mGameWidth/2.0;
         s_centerY = mGameHeight/2.0;
@@ -253,7 +254,15 @@ static float s_centerY = 0.0;
     __weak SPTween *tweenweak = tween;
     
     tween.onComplete = ^() {
-        [self onUFOHit:tweenweak];
+        UFOSprite *ufo = (UFOSprite*)tweenweak.target;
+        [mUFOs removeObject:ufo];
+        
+        [self addHitAtX:(int)ufo.x];
+        [ufo explode];
+        
+        mLifes--;
+        [self updateLifeAndRocketCount];
+        if (mLifes == 0) [self endGame];
     };
     
     [Sparrow.juggler addObject:tween];
@@ -412,18 +421,18 @@ static float s_centerY = 0.0;
     [mUFOs removeObject:ufo];
 }
 
-- (void)onUFOHit:(SPTween*)tween
-{
-    //SPTween *tween = (SPTween*)event.target;
-    UFOSprite *ufo = (UFOSprite*)tween.target;
-    [mUFOs removeObject:ufo];
-    
-    [self addHitAtX:(int)ufo.x];
-    [ufo explode];
-    
-    mLifes--;
-    [self updateLifeAndRocketCount];
-    if (mLifes == 0) [self endGame];
-}
+//- (void)onUFOHit:(SPTween*)tween
+//{
+//    //SPTween *tween = (SPTween*)event.target;
+//    UFOSprite *ufo = (UFOSprite*)tween.target;
+//    [mUFOs removeObject:ufo];
+//    
+//    [self addHitAtX:(int)ufo.x];
+//    [ufo explode];
+//    
+//    mLifes--;
+//    [self updateLifeAndRocketCount];
+//    if (mLifes == 0) [self endGame];
+//}
 
 @end

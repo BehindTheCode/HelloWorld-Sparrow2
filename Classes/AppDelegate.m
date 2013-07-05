@@ -38,7 +38,7 @@ void onUncaughtException(NSException *exception)
     [_Window makeKeyAndVisible];
 
     
-    
+
     return YES;
 }
 
